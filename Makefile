@@ -9,6 +9,7 @@ build: ;@echo "-- Buidling project"
 	npm run build
 
 dev: ;@echo "-- Staring dev server"
+# elm reactor ./src
 	npm run dev
 
 clean: ;@echo "-- Cleaning up dist files"
