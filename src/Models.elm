@@ -5,4 +5,7 @@ import Routing
 
 
 type alias Model =
-    String
+    { blogPosts : List Post
+    , route : Routing.Route
+    }
+
