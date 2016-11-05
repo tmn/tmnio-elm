@@ -4,7 +4,8 @@ elm-stuff/
 repl-temp-*
 
 # Other ignores
-\#.*
+\#*\#
+.\#*
 .DS_Store
 dist/
 
