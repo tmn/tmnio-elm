@@ -10,4 +10,5 @@ repl-temp-*
 dist/
 
 node_modules/
+npm-debug.log
 src/elm-package.json
