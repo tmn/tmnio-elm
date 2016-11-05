@@ -1,7 +1,20 @@
 module Main exposing (..)
 
 import Html.App exposing (program)
-import App exposing (..)
+import Messages exposing (Msg)
+import Models exposing (Model)
+import View exposing (view)
+import Update exposing (update)
+
+
+init : ( Model, Cmd Msg )
+init =
+    ( "tmn.io!", Cmd.none )
+
+
+subscriptions : Model -> Sub Msg
+subscriptions model =
+    Sub.none
 
 
 main : Program Never
