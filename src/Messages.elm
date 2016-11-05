@@ -1,5 +1,7 @@
 module Messages exposing (..)
 
+import Blog.Messages
+
 
 type Msg
-    = NoOp
+    = BlogPostMsg Blog.Messages.Msg
