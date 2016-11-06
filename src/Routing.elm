@@ -3,12 +3,12 @@ module Routing exposing (..)
 import String
 import Navigation
 import UrlParser exposing (..)
-import Blog.Models exposing (BlogPostId)
+import Blog.Models exposing (PostId)
 
 
 type Route
     = BlogRoute
-    | BlogPostRoute BlogPostId
+    | BlogPostRoute PostId
     | NotFoundRoute
 
 
