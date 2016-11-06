@@ -13,8 +13,12 @@ import Routing exposing (Route(..))
 
 view : Model -> Html Msg
 view model =
-    div []
-        [ defaultPage model ]
+    div [ class "container" ]
+        [ div [ id "mainView" ]
+            [ page model
+            ]
+        , sidebar
+        ]
 
 
 page : Model -> Html Msg
@@ -34,16 +38,6 @@ sidebar : Html msg
 sidebar =
     div [ id "sidebar" ]
         [ text "this is sidebars!!"
-        ]
-
-
-defaultPage : Model -> Html Msg
-defaultPage model =
-    div [ class "container" ]
-        [ div [ id "mainView" ]
-            [ page model
-            ]
-        , sidebar
         ]
 
 
