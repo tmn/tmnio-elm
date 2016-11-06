@@ -24,7 +24,7 @@ page model =
             Html.App.map BlogMsg (Blog.List.view model.blogPosts)
 
         BlogPostRoute id ->
-            blogPost model id
+            viewPost model id
 
         NotFoundRoute ->
             notFoundView
@@ -47,8 +47,8 @@ defaultPage model =
         ]
 
 
-blogPost : Model -> PostId -> Html Msg
-blogPost model postId =
+viewPost : Model -> PostId -> Html Msg
+viewPost model postId =
     let
         maybeBlogPost =
             model.blogPosts
