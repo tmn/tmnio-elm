@@ -21,7 +21,7 @@ page : Model -> Html Msg
 page model =
     case model.route of
         BlogRoute ->
-            Html.App.map BlogPostMsg (Blog.List.view model.blogPosts)
+            Html.App.map BlogMsg (Blog.List.view model.blogPosts)
 
         BlogPostRoute id ->
             blogPost model id
@@ -57,7 +57,7 @@ blogPost model postId =
     in
         case maybeBlogPost of
             Just post ->
-                Html.App.map BlogPostMsg (Blog.Post.view post)
+                Html.App.map BlogMsg (Blog.Post.view post)
 
             Nothing ->
                 notFoundView

@@ -4,4 +4,4 @@ import Blog.Messages
 
 
 type Msg
-    = BlogPostMsg Blog.Messages.Msg
+    = BlogMsg Blog.Messages.Msg
