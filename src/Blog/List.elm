@@ -1,6 +1,7 @@
 module Blog.List exposing (..)
 
 import Html exposing (..)
+import Html.Events exposing (onClick)
 import Blog.Messages exposing (..)
 import Blog.Models exposing (Post)
 
@@ -12,8 +13,9 @@ view posts =
 
 
 post post =
-    li []
-        [ text post.title ]
+    li [ onClick (ShowPost post.id) ]
+        [ text post.title
+        ]
 
 
 list : List Post -> Html Msg
